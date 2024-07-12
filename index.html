@@ -14,11 +14,11 @@
             <i class='bx bx-moon'></i>
         </div>
         <nav class="navbar" id="navbar-links">
-            <a href="#" style="--i:1" class="active">Home</a>
-            <a href="#" style="--i:2">About</a>
-            <a href="#" style="--i:3">Skills</a>
-            <a href="#" style="--i:4">Portfolio</a>
-            <a href="#" style="--i:5">Contact</a>
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#skills" style="--i:3">Skills</a>
+            <a href="#portfolio" style="--i:4">Portfolio</a>
+            <a href="#contact" style="--i:5">Contact</a>
         </div>
         </nav>
         <div class="menu-icon" id="menu-icon">
@@ -44,74 +44,90 @@
             <img src="assets/images/Untitled design (4).png" style="width: 900px;">
         </div>
     </section>
-    <hr class="section-divider">
 
     <section class="about" id="about">
-        <h2>About Me</h2>
-        <p>Dynamic HR professional with over two years of experience, eager to elevate organizational success through strategic human resources management. Proven adaptability, loyalty, and a strong work ethic. Quick learner with a track record of task achievement. Seeking exciting opportunities to contribute my skills and gain global experience.</p>
-    </section>
-
-    <hr class="section-divider">
-
-    <section class="skills" id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill-bar">
-                <div class="skill-title">Leadership Skills</div>
-                <div class="skill-percentage" style="width: 90%;">90%</div>
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="assets/images/Untitled design (4).png" alt="About Image"style="width: 600px;">
             </div>
-            <div class="skill-bar">
-                <div class="skill-title">Teaching Skills</div>
-                <div class="skill-percentage" style="width: 85%;">85%</div>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-title">Computer Skills</div>
-                <div class="skill-percentage" style="width: 95%;">95%</div>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-title">Communication Skills</div>
-                <div class="skill-percentage" style="width: 90%;">90%</div>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-title">Sales and Marketing Skills</div>
-                <div class="skill-percentage" style="width: 80%;">80%</div>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-title">Data Analysis</div>
-                <div class="skill-percentage" style="width: 85%;">85%</div>
+            <div class="about-text">
+                <p>Highly skilled HR professional with a keen eye for talent and a deep understanding of organizational needs. Dedicated to creating and implementing effective HR strategies to foster a positive work environment and drive business success.</p>
             </div>
         </div>
     </section>
 
-    <hr class="section-divider">
+    <section class="skills" id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-content">
+            <div class="skill">
+                <h3>Talent Acquisition</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Employee Relations</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>HR Strategy</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Onboarding</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="portfolio" id="portfolio">
-        <h2>Portfolio</h2>
-        <!-- Add your portfolio items here -->
+        <h2 class="section-title">Portfolio</h2>
+        <div class="portfolio-content">
+            <div class="portfolio-item">
+                <img src="assets/images/portfolio1.jpg" alt="Portfolio Item">
+                <h3>Project 1</h3>
+                <p>Description of the project goes here.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/images/portfolio2.jpg" alt="Portfolio Item">
+                <h3>Project 2</h3>
+                <p>Description of the project goes here.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/images/portfolio3.jpg" alt="Portfolio Item">
+                <h3>Project 3</h3>
+                <p>Description of the project goes here.</p>
+            </div>
+        </div>
     </section>
-
-    <hr class="section-divider">
-
     <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/your_form_id" method="POST">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-        <p>Email: <a href="mailto:ddulanjali97@gmail.com">ddulanjali97@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/dineshika-duranjali-4921721b4">Dineshika Duranjali</a></p>
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-content">
+            <form action="contact.php" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
     </section>
+    
+
+    <footer class="footer">
+        <p>&copy; 2024 Dineshika Duranjali. All rights reserved.</p>
+        <div class="theme-toggle">
+            <i class="bx bx-moon"></i>
+            <i class="bx bx-sun"></i>
+        </div>
+    </footer>
+
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
